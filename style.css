@@ -1,0 +1,22 @@
+
+body{ 
+     border: solid ;     
+    background-image: linear-gradient(white, darkslateblue, midnightblue)
+}
+h1,h2{ 
+    background-color: lemonchiffon;
+}
+
+h1,h2{text-align: center;}
+img{align:center;}
+
+p{
+    font-family: sans-serif;
+}
+
+ol{margin: auto;}
+table, th, td {
+  border: 1px solid;
+    width: 40%;
+}
+tr:hover{background-color: lemonchiffon;}
