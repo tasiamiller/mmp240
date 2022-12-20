@@ -1,0 +1,239 @@
+#wrapper{
+    max-width: 1200px;
+    padding: 1em;
+}
+
+p,h1,h2,h3,h4{
+    margin-bottom: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+/* header styling start */
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+.top-nav{
+    position: relative;
+}
+.dropmenu{
+    display: none;
+    position:absolute;
+    right: 1px;
+    z-index:300 ;
+}
+
+.dropdown li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+  background-color: transparent;  
+  border: none;
+}
+/* Header styling end */
+/*banner styling*/
+.banner{
+    min-height: 5em;
+    background: rgb(250,157,37);
+    background: linear-gradient(260deg, rgba(250,157,37,1) 15%, rgba(222,184,135,1) 68%);
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.banner h1{ width: 540px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 2em;
+padding: 1.5em;
+color: white;
+}
+.banner-image{
+    min-height: 15em;
+    background: rgb(250,157,37);
+background: linear-gradient(260deg, rgba(250,157,37,1) 15%, rgba(222,184,135,1) 68%);
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+banner h1,h2,h3,h4{ width: 540px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2em;
+    padding: 1.5em;
+    color: white;
+    }
+
+
+    .banner-image h1,h2,h3,h4{ width: 540px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 2em;
+        padding: 1.5em;
+        color: white;
+        text-align: center;
+        }
+/*banner styling end*/
+/* program search opening */
+.program-search h2,h3{
+    text-align: center;
+  color: black;  
+}
+.program-search{
+    min-height: 8em;
+    border:solid 1px black;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.main-search li{
+display: inline-block;
+margin-right: 2em;
+padding: 0.5em;
+text-align: center;
+border-bottom: solid 1px black;
+list-style-type: none;
+
+}
+
+.main-search li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: lightseagreen;
+    width: 100%;
+}
+.main-search li:hover .search-dropdown{
+display: block;
+}
+.search-dropdown{
+    background-color: lightgreen;
+    padding: 0;
+    position: absolute;
+    display: none;
+    z-index:400 ;
+}
+
+.search-dropdown li{
+    position: relative;
+    display: block;
+    border: solid 1px brown;
+    padding:0.5em 2em ;
+    margin-right: 0;
+   
+}
+/* program search end */
+
+/* layout styling start */
+.news-item a{
+    color: black;
+}
+
+.events {
+  padding-left: 20px;  
+}
+
+/* layout styling end */
+
+/* main card styling start */
+
+
+.card-link{
+    color: black;
+    text-decoration: none;
+}
+.card { 
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+  width: 20rem;
+  transition: transform .5s ease,
+  box-shadow .5s ease;
+}
+.card img{
+    width: 100%;
+    
+    }
+    .card-body p{
+    padding: 0 0.5em;
+    }
+    .card-body h2,h3,h4{
+        margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+    line-height: 1.7em;
+    }
+.card:hover{
+  transform: translate(0px, -5px);
+  box-shadow: 0px 5px 30px #999;  
+}
+/* card styling end */
+
+/*media queries opening*/
+@media(min-width: 748px) {
+.menu{
+    display: none;
+}
+
+.dropmenu{
+    display: flex;
+    position: static;
+}
+
+.dropmenu li{
+    display: inline;
+    margin-right: 2em;
+}
+
+.layout{
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-column-gap: 2em;
+}
+
+/* main card styling start */
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    grid-column-gap: 5px;
+
+}
+
+.card-link{
+    color: black;
+    text-decoration: none;
+}
+.card { 
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+  width: 20rem;
+  transition: transform .5s ease,
+  box-shadow .5s ease;
+}
+.card img{
+    width: 100%;
+    
+    }
+    .card-body p{
+    padding: 0 0.5em;
+    }
+    .card-body h2,h3,h4{
+        margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+    line-height: 1.7em;
+    }
+.card:hover{
+  transform: translate(0px, -5px);
+  box-shadow: 0px 5px 30px #999;  
+}
+/* card styling end */
+} /*media queries closing*/
